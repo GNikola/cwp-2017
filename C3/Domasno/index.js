@@ -9,9 +9,9 @@ function sekojTretParenBroj(niza){
     for (var i = 0; i < niza.length; i++){
         if (niza[i] % 2 == 0){
             a = a + 1;
-            	if (a == 3) {
-	console.log(niza[i]);
-		a = 0;
+           	if (a == 3) {
+				console.log(niza[i]);
+				a = 0;
             }
         }
     }
@@ -25,7 +25,6 @@ sekojTretParenBroj(niza7);
 
 
 function zbirNaNeparniBroevi(oddSum){
-
 	var s = 0;
 
 	for(var i = 0; i < oddSum.length; i++){
@@ -34,7 +33,7 @@ function zbirNaNeparniBroevi(oddSum){
 		}
 	}
 
-	console.log(s);
+	// console.log(s);
 	return s;
 }
 
@@ -51,10 +50,11 @@ function prosek(niza){
 		total = total + niza[i];
 	}
 
-	var average = total / niza.length;
+	// var average = total / niza.length;
+	return total / niza.length;
 
-	console.log(average);
-	return average;
+	// console.log(average);
+	// return average;
 }
 
 prosek(niza5);
