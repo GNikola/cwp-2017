@@ -1,8 +1,14 @@
 document.getElementById("yahoo").addEventListener('click', goToYahoo);
+document.getElementById("yahoo").addEventListener("auxclick", goToYahoo_Blank);
 
 function goToYahoo(){
 	this.href = "https://www.yahoo.com/"
 };
+
+function goToYahoo_Blank(){
+		this.href = "https://www.yahoo.com/";
+		this.target = "_Blank";
+	}
 
 
 document.getElementById("input1").addEventListener("keyup", myFunction);
